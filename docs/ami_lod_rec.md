@@ -154,7 +154,7 @@ The same general pattern can be adapted to apply to different mapping scenarios 
 
 When you have finished preparing your Template(s) as needed and completed your LoD Reconiliation Review, your AMI Set with LoD Reconciled Data will now need to be Processed.
 
-To Process this set, navigate to the `Process` tab. You will have multiple options related to the Processing outcome for your AMI Set. 
+To Process this set, navigate to the `Process` tab. You will have multiple options related to the Processing outcome for your AMI Set. You may select multiple options at the same time.
 - Select the "Desired ADOS Statuses After Process" for both Digital Objects (and Digital Object Collections, if also part of your ingest).
     - The Statuses you have available will reflect the publication workflow/moderation states (such as Draft, Published, Archived/Unpublished) setup in your Archipelago instance, and the permissions associated your user account.	
 - Option 1: *'Enqueue but do not process Batch'*. Check this to enqueue but not trigger the interactive Batch processing. Cron or any other mechanism you have enabled will do the actual operation. This queue is shared by all AMI Sets in this repository and will be processed on a First-In First-Out basis.
