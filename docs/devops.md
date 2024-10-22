@@ -35,6 +35,7 @@ _Information related to non-Dockerized installation and configruation can be fou
 - [Webform Strawberryfield](https://github.com/esmero/webform_strawberryfield)
 - [Strawberry Runners](https://github.com/esmero/strawberry_runners)
 - [Archipelago Multi-Importer (AMI)](https://github.com/esmero/ami)
+- [Fragaria Redirects](https://github.com/esmero/fragaria)
 
 Documentation related to the Strawberryfield modules can be found here: [Strawberryfields Forever](strawberryfields.md)
 
