@@ -18,7 +18,7 @@ Much more information can be found here: [Archipelago Multi-Importer (AMI)](ami_
 
 ### AMI Sets
 
-This refers to the special custom entities that hold an Ingest or Update Strategy, a source data CSV with data/metadata, and possibly a CSV for Processed Data coming from Archipelago's [Linked Data Reconciliation](ami_lod_rec.md).
+This refers to the special AMI custom entities that hold an Ingest or Update Strategy, a source data CSV with data/metadata, and possibly a CSV for Processed Data coming from Archipelago's [Linked Data Reconciliation](ami_lod_rec.md).
 
 More information can be found here: [Archipelago Multi-Importer (AMI) - AMI Set Entity](ami_index.md#ami-set-entity).
 
@@ -34,7 +34,7 @@ AMI's Update Operations can be used to Update, Replace, or Append metadata value
 
 More information can be found here: [AMI Update Sets](ami_update.md).
 
-### ap:entitymapping (JSON key)
+### `ap:entitymapping` (JSON key)
 
 This key is used to provide structural mapping hints for Archipelago, such as whether an ADO uses 'images' or 'ispartof'. 
 
