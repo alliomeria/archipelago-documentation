@@ -10,11 +10,17 @@ Abbreviation of Archipelago Digital Object. Can be used to refer to ADO Collecti
 
 Essentially, any Content type that uses a Strawberry Field is an ADO.
 
+### ADO to View Mode Mapping
+
+This refers to the 'ADO to View Mode Mapping' form found at `/admin/config/archipelago/viewmode_mapping`. This form is used to determine the 'Display Mode' used for an ADO based on the objects `type`.
+
+See the 'Display Mode' and `type` references below.
+
 ### AMI: Archipelago Multi Importer
 
 Archipelago's Module for module for batch/bulk/mass ingests of Archipelago digital objects (ADOs) and collections. AMI also enables you to perform batch administrative actions, such as updating, patching/revising, or deleting digital objects and collections.
 
-Much Related documentation: [Archipelago Multi-Importer (AMI)](ami_index.md).
+Related documentation: [Archipelago Multi-Importer (AMI)](ami_index.md).
 
 ### AMI Sets
 
@@ -26,7 +32,7 @@ Related documentation: [Archipelago Multi-Importer (AMI) - AMI Set Entity](ami_i
 
 The AMI Reports tab contains information related to the last Processing operation run against your AMI Set.
 
-Related documentation:[Step 10: Review your newly created Digital Objects directly or via AMI Set Report](AMIviaSpreadsheets.md/#step-10-review-your-newly-created-digital-objects-directly-or-via-ami-set-report).
+Related documentation: [Step 10: Review your newly created Digital Objects directly or via AMI Set Report](AMIviaSpreadsheets.md/#step-10-review-your-newly-created-digital-objects-directly-or-via-ami-set-report).
 
 ### AMI Update
 
@@ -40,13 +46,23 @@ This key is used to provide structural mapping hints for Archipelago, such as wh
 
 Related documentation: [Metadata in Archipelago - The ap:entitymapping key](metadatainarchipelago.md#the-apentitymapping-key)
 
+### `as:{as_file_type}` (JSON key)
+
+This key is used to provide filetype mapping information for Archipelago, and will be automatically generated depending on the type of file associated with an ADO.. 
+
+Related documentation: [Metadata in Archipelago - The as:{as_file_type} key](metadatainarchipelago.md#the-asas_file_type-keys)
+
+### Compound Object
+
+See 'Digital Object Collection / Compound Object / Creative Work Series' below.
+
 ### Creative Work Series
 
 See 'Digital Object Collection / Compound Object / Creative Work Series' below.
 
 ### Data Transformation Selections
 
-The data transformation approach used in an AMI Set, how your source data will be transformed into ADO (Archipelago Digital Object) Metadata.
+The data transformation approach used in an AMI Set, and determines how your source data will be transformed into ADOs upon AMI Set Processing.
 
 Related documentation: [Step 3. Data Transformation Selections](AMIviaSpreadsheets.md/#step-3-data-transformation-selections).
 
@@ -56,7 +72,7 @@ This is the Drupal Content Type that refers to Digital Objects in Archipelago.
 
 This is the Content Type used for standalone/non-hierarchically structured or Child Objects in Parent-Child Relationships.
 
-For most Archipelago repositories, this the most common Drupal Content Type used.
+For most Archipelago repositories, this is the most common Drupal Content Type used.
 
 More context can be found here: [Metadata in Archipelago - Drupal and JSON](metadatainarchipelago.md#drupal-and-json)
 
@@ -64,13 +80,13 @@ More context can be found here: [Metadata in Archipelago - Drupal and JSON](meta
 
 This is the Drupal Content Type that refers to Digital Object Collections or Parent Compound Objects / Creative Work Series in Archipelago. 
 
-This is Content Type used for Parent Objects in Parent-Child Relationships.
+This is Content Type used for Parent Objects in Parent-Child Relationships (such as Book to Page, where Book = Parent and Page = Child). 
 
 More context can be found here: [Metadata in Archipelago - Drupal and JSON](metadatainarchipelago.md#drupal-and-json)
 
 ### Display Mode / View Mode
 
-A Display Mode is a configureable page layout, using Formatter and other options, for the general display of an ADO in Archipelago. You can define Display Modes for different `types` of Digital Objects and Collections.
+A Display Mode is a configureable page layout, using Formatters and other options, for the general display of an ADO in Archipelago. You can define Display Modes for different `types` of Digital Objects and Collections. 
 
 Display Mode and View Mode can be used interchangeably.
 
@@ -88,7 +104,7 @@ See 'Strawberryfield Formatters' below.
 
 ### Fragaria Redirects
 
-Archipelago's Fragaria Redirect Module is a Drupal 9/10 module that provides dynamic redirect routes matched against existing Search API field values.
+Archipelago's Fragaria Redirect Module is a special module that provides dynamic redirect routes matched against existing Search API field values.
 
 Related documentation: [Fragaria Redirects Module](fragaria.md). 
 
@@ -102,7 +118,9 @@ For ingested ADOs, this key will contain 'node id' integers for corresponding Co
 
 In AMI sets, this key can contain integers to connect to an object's corresponding row in the same spreadsheet/CSV, or a UUID for an already ingested Collection object.
 
-This key should not contain string values for Collection labels/titles.
+This key should never contain string values for Collection labels/titles.
+
+See also `ap:entitymapping` key above.
 
 ### `ispartof` (JSON key)
 
@@ -114,7 +132,9 @@ For ingested ADOs, this key will contain 'node id' integers for a corresponding 
 
 In AMI sets, this key can contain integers to connect to an object's corresponding row in the same spreadsheet/CSV, or a UUID for an already ingested Parent object.
 
-This key should not contain string values for Parent Object labels/titles.
+This key should never contain string values for Parent Object labels/titles.
+
+See also `ap:entitymapping` key above.
 
 ### `label` (JSON key)
 
@@ -157,6 +177,10 @@ Related documentation: [Metadata Display Usage](metadata_display_usage.md)
 The Process Tab contains configuration options for selecting outcomes related to the Processing of your AMI Set.
 
 Related documentation: [Step 7: AMI Set Processing](AMIviaSpreadsheets.md/#step-7-ami-set-processings).
+
+### Search and Replace
+
+See 'Find and Replace' above.
 
 ### Search & Solr
 
@@ -248,3 +272,5 @@ ___
 Thank you for reading! Please contact us on our [Archipelago Commons Google Group](https://groups.google.com/forum/#!forum/archipelago-commons) with any questions or feedback.
 
 Return to the [Archipelago Documentation main page](index.md).
+
+
