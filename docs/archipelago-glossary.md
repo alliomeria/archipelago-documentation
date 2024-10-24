@@ -14,13 +14,13 @@ Essentially, any Content type that uses a Strawberry Field is an ADO.
 
 Archipelago's Module for module for batch/bulk/mass ingests of Archipelago digital objects (ADOs) and collections. AMI also enables you to perform batch administrative actions, such as updating, patching/revising, or deleting digital objects and collections.
 
-Much Related documentation:[Archipelago Multi-Importer (AMI)](ami_index.md).
+Much Related documentation: [Archipelago Multi-Importer (AMI)](ami_index.md).
 
 ### AMI Sets
 
 This refers to the special AMI custom entities that hold an Ingest or Update Strategy, a source data CSV with data/metadata, and possibly a CSV for Processed Data coming from Archipelago's [Linked Data Reconciliation](ami_lod_rec.md).
 
-Related documentation:[Archipelago Multi-Importer (AMI) - AMI Set Entity](ami_index.md#ami-set-entity).
+Related documentation: [Archipelago Multi-Importer (AMI) - AMI Set Entity](ami_index.md#ami-set-entity).
 
 ### AMI Reports / Reports Tab
 
@@ -32,19 +32,23 @@ Related documentation:[Step 10: Review your newly created Digital Objects direct
 
 AMI's Update Operations can be used to Update, Replace, or Append metadata values or files for existing Digital Objects and Collections found in your Archipelago. You can prepare and use AMI Update Sets in different ways using one of three functional operations, depending on your update needs.
 
-Related documentation:[AMI Update Sets](ami_update.md).
+Related documentation: [AMI Update Sets](ami_update.md).
 
 ### `ap:entitymapping` (JSON key)
 
 This key is used to provide structural mapping hints for Archipelago, such as whether an ADO uses 'images' or 'ispartof'. 
 
-Related documentation:[Metadata in Archipelago - The ap:entitymapping key](metadatainarchipelago.md#the-apentitymapping-key)
+Related documentation: [Metadata in Archipelago - The ap:entitymapping key](metadatainarchipelago.md#the-apentitymapping-key)
+
+### Creative Work Series
+
+See 'Digital Object Collection / Compound Object / Creative Work Series' below.
 
 ### Data Transformation Selections
 
 The data transformation approach used in an AMI Set, how your source data will be transformed into ADO (Archipelago Digital Object) Metadata.
 
-Related documentation:[Step 3. Data Transformation Selections](AMIviaSpreadsheets.md/#step-3-data-transformation-selections).
+Related documentation: [Step 3. Data Transformation Selections](AMIviaSpreadsheets.md/#step-3-data-transformation-selections).
 
 ### Digital Object
 
@@ -70,13 +74,13 @@ A Display Mode is a configureable page layout, using Formatter and other options
 
 Display Mode and View Mode can be used interchangeably.
 
-Related documentation:[Primer on Display Modes](webformsasinput.md). 
+Related documentation: [Primer on Display Modes](webformsasinput.md). 
 
 ### Find and Replace
 
 Archipelago's Advanced Batch Find and Replace functionality provides different ways for you to efficiently Find/Search and Replace metadata values found in the raw JSON of your Digital Objects and Collections.
 
-Related documentation:[Advanced Batch Find and Replace](find_and_replace.md)
+Related documentation: [Advanced Batch Find and Replace](find_and_replace.md)
 
 ### Formatters / Strawberryfield Formatters
 
@@ -86,7 +90,7 @@ See 'Strawberryfield Formatters' below.
 
 Archipelago's Fragaria Redirect Module is a Drupal 9/10 module that provides dynamic redirect routes matched against existing Search API field values.
 
-Related documentation:[Fragaria Redirects Module](fragaria.md). 
+Related documentation: [Fragaria Redirects Module](fragaria.md). 
 
 ### `ismemberof` (JSON key)
 
@@ -116,49 +120,49 @@ This key should not contain string values for Parent Object labels/titles.
 
 This key is used for the title of the Digital Object or Collection, and is required for all ADOs. 
 
-Related documentation:[Metadata in Archipelago - The label key](metadatainarchipelago.md#the-label-key)
+Related documentation: [Metadata in Archipelago - The label key](metadatainarchipelago.md#the-label-key)
 
 ### Linked Data Reconciliation / LoD Reconciliation
 
 AMI's (Archipelago Multi Importer's) Linked Data Reconciliation tool can be used to enrich your metadata with Linked Data (LoD). Using this tool, you can map values from your topical/subject metadata elements to your preferred LoD vocabulary source. These mappings can then be transformed via a corresponding Metadata Display (Twig) template to process the values into JSON-formatted metadata for your specified AMI set.
 
-Related documentation:[Linked Data Reconciliation](ami_lod_rec.md).
+Related documentation: [Linked Data Reconciliation](ami_lod_rec.md).
 
 ### Metadata API Module
 
 Archipelago's Metadata API Module is a special Strawberryfield Formatter Module that implements Metadata API Endpoints and uses Views and Metadata Display Entities as a configuration option to provide dynamic APIs based on Metadata present in each Archipelago Digital Object (or Node) that contains a Strawberryfield type of field (JSON).
 
-Related documentation:[Metadata API Module](open_api.md)
+Related documentation: [Metadata API Module](open_api.md)
 
 ### Metadata Display Entities / Twig Templates
 
 Metadata Display Entities are particular Twig Templates used in Archipelago to transform or 'cast' JSON metadata/data into different displays and outputs.
 
-Related documentation:[Twig Templates and Archipelago](metadatatwigs.md)
+Related documentation: [Twig Templates and Archipelago](metadatatwigs.md)
 
 ### Metadata Display Preview
 
 Archipelago's Metadata Display Preview is a very handy tool for your repository toolkit that enables you to preview the output of your Metadata Display (Twig) Templates (found at /metadatadisplay/list).
 
-Related documentation:[Metadata Display Preview](metadata_display_preview.md)
+Related documentation: [Metadata Display Preview](metadata_display_preview.md)
 
 ### Metadata Display Usage
 
 Archipelago's Metadata Display Usage tab is an extension of Metadata Display Preview that provides a convenient way for you to check where a Metadata Display Template is currently being used across your Archipelago. 
 
-Related documentation:[Metadata Display Usage](metadata_display_usage.md)
+Related documentation: [Metadata Display Usage](metadata_display_usage.md)
 
 ### Process Tab / AMI Set Processing
 
 The Process Tab contains configuration options for selecting outcomes related to the Processing of your AMI Set.
 
-Related documentation:[Step 7: AMI Set Processing](AMIviaSpreadsheets.md/#step-7-ami-set-processings).
+Related documentation: [Step 7: AMI Set Processing](AMIviaSpreadsheets.md/#step-7-ami-set-processings).
 
 ### Search & Solr
 
 Refers to the integrations of related (Archipelago, Drupal) Search and Solr Index components in Archipelago.
 
-Related documentation:[Search & Solr Overview](search-solr-index.md)
+Related documentation: [Search & Solr Overview](search-solr-index.md)
 
 ### Strawberryfield (or Strawberry Field)
 
@@ -168,7 +172,7 @@ The Strawberryfield contains all of the data and metadata associated with ADOs i
 
 In default Archipelagos, can be viewed in the 'Raw JSON' display beneath every ADO when logged in as an authenticated user.
 
-Related documentation:[Metadata in Archipelago](metadatainarchipelago.md).
+Related documentation: [Metadata in Archipelago](metadatainarchipelago.md).
 
 ### Strawberry Flavour
 
@@ -227,7 +231,7 @@ This key is used for the Digital Object or Digital Object Collection/  semantic 
 
 This key is required for all ADOs.
 
-Related documentation:[Metadata in Archipelago - The type key](metadatainarchipelago.md#the-type-key)
+Related documentation: [Metadata in Archipelago - The type key](metadatainarchipelago.md#the-type-key)
 
 ### View Mode / Display Mode
 
@@ -244,5 +248,3 @@ ___
 Thank you for reading! Please contact us on our [Archipelago Commons Google Group](https://groups.google.com/forum/#!forum/archipelago-commons) with any questions or feedback.
 
 Return to the [Archipelago Documentation main page](index.md).
-
-
